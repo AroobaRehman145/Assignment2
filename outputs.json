@@ -1,0 +1,76 @@
+{
+  "backend_servers_info": {
+    "sensitive": false,
+    "type": [
+      "object",
+      {
+        "web-1": [
+          "object",
+          {
+            "instance_id": "string",
+            "private_ip": "string",
+            "public_ip": "string"
+          }
+        ],
+        "web-2": [
+          "object",
+          {
+            "instance_id": "string",
+            "private_ip": "string",
+            "public_ip": "string"
+          }
+        ],
+        "web-3": [
+          "object",
+          {
+            "instance_id": "string",
+            "private_ip": "string",
+            "public_ip": "string"
+          }
+        ]
+      }
+    ],
+    "value": {
+      "web-1": {
+        "instance_id": "i-0f34377e5b0b21b89",
+        "private_ip": "10.0.10.209",
+        "public_ip": "3.28.134.45"
+      },
+      "web-2": {
+        "instance_id": "i-0d9e632d1090cc80b",
+        "private_ip": "10.0.10.159",
+        "public_ip": "3.28.215.229"
+      },
+      "web-3": {
+        "instance_id": "i-07e905fc8dadda1dc",
+        "private_ip": "10.0.10.107",
+        "public_ip": "158.252.35.180"
+      }
+    }
+  },
+  "configuration_guide": {
+    "sensitive": false,
+    "type": "string",
+    "value": "========================================\nDEPLOYMENT SUCCESSFUL! \n========================================\n        \nNext Steps:\n1. SSH into Nginx server: ssh ec2-user@51.112.187.138\n2. Edit Nginx config: sudo vim /etc/nginx/nginx.conf\n3. Update backend IPs in upstream block:\n    - BACKEND_IP_1: 10.0.10.209\n    - BACKEND_IP_2: 10.0.10.159\n    - BACKEND_IP_3: 10.0.10.107\n4. Restart Nginx: sudo systemctl restart nginx\n5. Test: http://51.112.187.138\n        \nBackend Servers:\n- web-1: 3.28.134.45 (private: 10.0.10.209)\n    - web-2: 3.28.215.229 (private: 10.0.10.159)\n    - web-3: 158.252.35.180 (private: 10.0.10.107)\n        \n========================================\n"
+  },
+  "nginx_instance_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "i-0ae8ccb47ddec176c"
+  },
+  "nginx_public_ip": {
+    "sensitive": false,
+    "type": "string",
+    "value": "51.112.187.138"
+  },
+  "subnet_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "subnet-0f736670fcc534f64"
+  },
+  "vpc_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "vpc-0af782d5ca30753b8"
+  }
+}
