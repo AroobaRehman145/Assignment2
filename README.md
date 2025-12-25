@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lab 12 Assignment: Terraform Modular Infrastructure
 
 ## Project Structure
@@ -29,3 +30,6 @@ This project deploys a highly available Nginx Load Balancer distributing traffic
 - **502 Bad Gateway:** Ensure backend Nginx services are running.
 - **Connection Refused:** Check Security Group Inbound Rules for Port 80/443.
 - **Config Test Failed:** Run `sudo nginx -t` to find syntax errors..
+=======
+# Assignment2
+>>>>>>> afcb15f59ebe4a8b55a11fba5f597273b18d17e0
